@@ -11,7 +11,7 @@ func Server4() {
 	http.HandleFunc("/", handler2)
 	http.HandleFunc("/count/", counter)
 	http.HandleFunc("/lissajous/", func(responseWriter http.ResponseWriter, request *http.Request) {
-		section14.Lissajous(responseWriter)
+		section14.Lissajous1(responseWriter)
 	})
 	log.Fatal(http.ListenAndServe("localhost:4040", nil))
 }
